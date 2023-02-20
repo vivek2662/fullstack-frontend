@@ -1,0 +1,69 @@
+.container-outer{
+
+    background-image: url("https://cdn.xxl.thumbs.canstockphoto.com/dark-blue-background-with-floating-particles-abstract-dark-blue-background-with-floating-particles-video_csp45168141.jpg");
+
+    background-size: cover;
+
+    height: 100vh;
+
+}
+
+
+
+.container{
+
+    text-align: center;
+
+}
+
+.card{
+
+    background:linear-gradient(to bottom, #fcc603, white);
+
+    width: 30%;
+
+    box-shadow: 2px, solid black;
+
+}
+
+
+
+.heading{
+
+    color:black;
+
+    font-family:'Roboto';
+
+}
+
+
+
+.forget{
+
+    font-size: 12px;
+
+    text-align: left;
+
+}
+
+.para{
+
+    font-size: 14px;
+
+}
+
+
+
+.ng-invalid.ng-touched{
+
+    border-color: red;
+
+}
+
+
+
+.error-msg{
+
+color:red;
+
+}

@@ -1,0 +1,46 @@
+
+     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a  class="nav-link" >About Cars</a>
+          </li>
+      
+          <li class="nav-item">
+            <a  class="nav-link" > Contact Details </a>
+          </li>
+    
+        </ul>
+          <ul  class="navbar-nav ms-auto">
+            <li class="nav-item " >  
+              <a (click)="exit()" class="nav-link" routerLink="/login" >Logout</a>  
+            </li>  
+        </ul>  
+    </nav> 
+
+    <div class="background-container">
+    <div  style= "margin-left: 250px;" class="row row-cols-1 row-cols-md-2 g-4"  >
+        <div class="col" style="margin-top: 150px;">
+          <div class="card  text-white bg-black mb-3" style="max-width: 18rem;">
+            <img src="../../assets/list.jpg"   height="200px"  class="card-img-top" alt="...">
+            <div class="card-body">
+              <button  class="btn btn-primary btn-lg active" role="button" aria-pressed="true" routerLink="/cars"  routerLinkActive="active" >Cars List</button>
+              <br>
+              <hr>
+              <p> <b> Cars details were present in this Cars List</b>  </p>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="margin-top: 150px;">
+          <div class="card  text-white bg-black mb-3" style="max-width: 18rem;">
+            <img src="../../assets/car.jpg" height="220px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" routerLink="/create-car"  routerLinkActive="active" >Add Cars</button>
+              <br>
+              <hr>
+              <p> <b> Create an Car to add in Cars List </b> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    

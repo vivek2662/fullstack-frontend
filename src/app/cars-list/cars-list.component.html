@@ -1,0 +1,32 @@
+<div class="outer">
+    <h2> Cars List </h2>
+    <table class=" table table-bordered">
+        <thead>
+            <tr>
+                <th> Car Name </th>
+                <th>Company </th>
+                <th> Fuel Type</th>
+                <th> Price </th>
+                <th> mileage </th>
+                <th> Actions </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let car of cars">
+                <td>{{car.carname}} </td>
+                <td>{{car.company}} </td>
+                <td>{{car.fueltype}} </td>
+                <td>{{car.price}} </td>
+                <td>{{car.mileage}} </td>
+                <td>
+                    <button style="margin:2px;" (click)="updateCar(car.id)" class="btn btn-info"> Update</button>
+                    <button style="margin:2px;" (click)="deleteCar(car.id)" class="btn btn-danger"> Delete</button>
+                    <button style="margin:2px;" (click)="carDetails(car.id)" class="btn btn-primary"> ViewDetails</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button style="margin:5px;" class="btn btn-dark" type="back" aria-pressed="true" routerLink="/navbar"> back
+    </button>
+</div>

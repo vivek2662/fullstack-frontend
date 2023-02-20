@@ -1,0 +1,40 @@
+<div class="outer">
+<div class="col-md-6 offset-md-3 ">
+    <h3> Create Cars </h3>
+    <form (ngSubmit)= "onSubmit()">
+
+        <div class="form-group">
+            <label> Car Name</label>
+            <input type="text" class ="form-control" id = "carname"
+                [(ngModel)] = "car.carname" name = "carname">
+        </div>
+
+        <div class="form-group">
+            <label> Company</label>
+            <input type="text" class ="form-control" id = "company"
+                [(ngModel)] = "car.company" name = "company">
+        </div>
+
+        <div class="form-group">
+            <label> FuelType</label>
+            <input type="text" class ="form-control" id = "fueltype"
+                [(ngModel)] = "car.fueltype" name = "fueltype">
+        </div>
+
+        <div class="form-group">
+            <label> Price</label>
+            <input type="text" class ="form-control" id = "price"
+                [(ngModel)] = "car.price" name = "price">
+        </div>
+
+        
+        <div class="form-group">
+            <label> Mileage</label>
+            <input type="text" class ="form-control" id = "mileage"
+                [(ngModel)] = "car.mileage" name = "mileage">
+        </div>
+        <button style="margin:5px;" class = "btn btn-success" type = "submit" aria-pressed= "true">Submit</button>
+        <button style="margin:5px;"  class="btn btn-dark" type = "back" aria-pressed="true"  routerLink="/navbar"> back </button>
+    </form>
+</div>
+</div>
